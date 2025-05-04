@@ -8,7 +8,7 @@ body{
     margin: auto;
     width: 1200px;
     height: 400px;
-    background: url(../img/bg-header.jpg) no-repeat center center;
+    background: url(bg-header.jpg) no-repeat center center;
     background-size: cover;
 }
 
