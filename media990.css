@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+    .wrapper-header {
+        flex-direction: column;
+        height: auto;
+        background-position: center top;
+        text-align: center;
+    }
+
+    .wrapper-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-movie {
+        margin: 20px 0 0 0;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-container-left,
+    .navigation-container-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .navigation-container-right span,
+    .navigation-container-right button {
+        margin: 5px;
+    }
+
+    .cards-container {
+        margin-top: 30px;
+    }
+
+    .modal-content-edit,
+    #edit-desc {
+        width: 100%;
+    }
+}

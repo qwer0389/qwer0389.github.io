@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media1200.css">
+    <link rel="stylesheet" href="css/media990.css">
+    <link rel="stylesheet" href="css/media760.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="wrapper-header">
+        <div class="wrapper-logo">
+        <span><b>NETFLIX</b>roulette</span>
+        <button type="button" class="add-movie">+ ADD MOVIE</button>
+        </div>
+        <div class="search-box">
+        <p>FIND YOUR MOVIE</p>
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="What do you want to watch?">
+            <button type="submit">SEARCH</button>
+        </form>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="wrapper">
+        <div class="navigation-container">
+        <div class="navigation-container-left">
+            <button class="navigation-link" type="button" data-filter="all">ALL</button>
+            <button class="navigation-link" type="button" data-filter="documentary">DOCUMENTARY</button>
+            <button class="navigation-link" type="button" data-filter="comedy">COMEDY</button>
+            <button class="navigation-link" type="button" data-filter="horror">HORROR</button>
+            <button class="navigation-link" type="button" data-filter="crime">CRIME</button>
+            <button class="navigation-link" type="button" data-filter="adventure">ADVENTURE</button>
+            <button class="navigation-link" type="button" data-filter="drama">DRAMA</button>
+        </div>
+        <div class="navigation-container-right">
+            <span>SORT BY</span>
+            <button id="sort" type="button">RELEASE DATE</button>
+        </div>
+    </div>
+        <div class="line"></div>
+        <div class="wrapper-cards" id="body">
+            <div class="cards-container" data-event-date="2004" data-cat="adventure">
+                <img src="img/pulpfiction.jpg" alt="Pulpfiction">
+                <div class="text-container">
+                    <span>Pulp Fiction</span>
+                    <span class="dateFilm">2004</span>
+                </div>
+                <p>Action & Adventure</p>
+            </div>
+            <div class="cards-container" data-event-date="2003" data-cat="documentary">
+                <img src="img/bohemian.jpg" alt="">
+                <div class="text-container">
+                    <span>Bohemian Rhapsody</span>
+                    <span class="dateFilm">2003</span>
+                </div>
+                <p>Drama, Biography, Music</p>
+            </div>
+            <div class="cards-container" data-event-date="1994" data-cat="horror">
+                <img src="img/killbill.jpg" alt="">
+                <div class="text-container">
+                    <span>Kill Bill: Vol 2</span>
+                    <span class="dateFilm">1994</span>
+                </div>
+                <p>Oscar winning Movie</p>
+            </div>
+            <div class="cards-container" data-event-date="2004" data-cat="adventure">
+                <img src="img/Bitmap.jpg" alt="">
+                <div class="text-container">
+                    <span>Avengers: War of Infinity</span>
+                    <span class="dateFilm">2004</span>
+                </div>
+                <p>Action & Adventure</p>
+            </div>
+            <div class="cards-container" data-event-date="2003" data-cat="adventure">
+                <img src="img/inception.jpg" alt="">
+                <div class="text-container">
+                    <span>Inception</span>
+                    <span class="dateFilm">2003</span>
+                </div>
+                <p>Action & Adventure</p>
+            </div>
+            <div class="cards-container" data-event-date="1994" data-cat="crime">
+                <img src="img/dogs.jpg" alt="">
+                <div class="text-container">
+                    <span>Reservoir dogs</span>
+                    <span class="dateFilm">1994</span>
+                </div>
+                <p>Oscar winning Movie</p>
+            </div>
+            <div id="modal" class="modal-overlay">
+                <div class="modal-content">
+                    <p id="modal-text">Вы уверены?</p>
+                    <div class="modal-buttons">
+                        <button id="modal-close">Close</button>
+                        <button id="modal-confirm">Confirm</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-edit" class="modal-overlay">
+                <div class="modal-content-edit">
+                    <form id="edit-form">
+                        <h3>edit movie</h3>
+                        <label>
+                            <p>TITLE:</p>
+                            <input type="text" id="edit-title" required />
+                        </label>
+                        <label>
+                            <p>RELEASE DATE:</p>
+                            <input type="text" id="edit-year" required />
+                        </label>
+                        <label>
+                            <p>DESCRIPTION:</p>
+                            <textarea id="edit-desc" cols="40" rows="10" required ></textarea>
+                        </label>
+                        <div class="modal-buttons">
+                            <button type="button" id="modal-edit-close">RESET</button>
+                            <button type="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+body{
+    background: #555555;
+}
+
+.wrapper-header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    height: 400px;
+    background: url(../img/bg-header.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.wrapper-header span{
+    padding-top: 20px;
+    padding-left: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f65261;
+
+}
+
+.wrapper-header span b{
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 900;
+}
+
+.wrapper-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-left: 130px;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    width: 713px;
+    height: 57px;
+    background: rgba(118, 118, 118, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.add-movie{
+    background: rgba(96, 96, 96, 0.68);
+    border-radius: 4px;
+    width: 177px;
+    height: 46px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #f65261;
+    align-self: end;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+
+button[type="submit"] {
+    background: #f65261;
+    border-radius: 4px;
+    width: 233px;
+    height: 57px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.search-box{
+    margin-top: 80px;
+}
+
+.hide{
+    display: none;
+}
+
+.navigation-link{
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navigation-container-left{
+    margin-left: 20px;
+}
+
+.navigation-container-right{
+    margin-right: 30px;
+    display: flex;
+}
+
+.navigation-container-right span{
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #fff;
+    opacity: 0.6;
+}
+.navigation-container-right button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.navigation-container-right button:hover{
+    color: #f65261;
+}
+
+.navigation-link.active {
+    color: #F65261;
+}
+
+.navigation-link:hover {
+    color: #f65261;
+}
+
+.wrapper-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wrapper{
+    margin: auto;
+    width: 1200px;
+    background: #232323;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.cards-container{
+    margin-top: 50px;
+}
+
+.dateFilm{
+    border: 2px solid #979797;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text-container span{
+    margin: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.cards-container p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.line{
+    margin: auto;
+    height: 3px;
+    width: 1140px;
+    background: #424242;
+}
+
+.cards-container {
+    position: relative;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burger-menu span {
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.burger-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: #232323;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    min-width: 140px;
+    z-index: 20;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.burger-dropdown button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.burger-dropdown button:hover {
+    background-color: #f65261;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: #232323;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-buttons button {
+    background: #f65261;
+    border-radius:  4px;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.modal-content-edit {
+    background: #232323;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 950px;
+    height: auto;
+    width: 90%;
+    text-align: left;
+}
+
+label{
+    font-family: "Montserrat", sans-serif;
+    color: #f65261;
+}
+
+.modal-content-edit form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edit-form h3{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+#edit-form p{
+    padding-bottom: 10px;
+}
+
+#edit-desc {
+    resize: none;
+    width: 850px;
+}
+
+
+

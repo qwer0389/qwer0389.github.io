@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+    .wrapper, .wrapper-header {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .wrapper-header {
+        height: auto;
+        background-position: center top;
+        text-align: center;
+    }
+
+    .wrapper-header span {
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .search-box p {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        width: 90%;
+    }
+
+    .add-movie {
+        width: 90%;
+        margin: 20px auto 0;
+        align-self: center;
+    }
+
+    .wrapper-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation-container-left,
+    .navigation-container-right {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-container-right span,
+    .navigation-container-right button {
+        margin: 5px 0;
+    }
+
+    .modal-content-edit {
+        width: 95%;
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    #edit-desc {
+        width: 100%;
+    }
+
+    .cards-container {
+        margin-top: 20px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .burger-menu {
+        top: 5px;
+        right: 5px;
+    }
+}
